@@ -1,0 +1,207 @@
+/******w***********
+    
+    Project 3 Stylesheet
+    Name: Eric Timperman
+    Date: August 14th 2024
+    Description: CSS for Project 3 validated
+
+******************/
+
+body {
+	font-family: 'Lato';
+	text-align: center;
+	margin: 0;
+
+}
+h1 {
+	color: white;
+}
+
+header {
+	background-image: url("images/navBackground.jpg");
+
+
+}
+	header div {
+		display: flex;
+		justify-content: space-between;
+	}
+		header div div {
+			color: white;
+			padding-left: 10px;
+		}
+
+		header nav ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			list-style: none;
+		}
+
+		@media (max-width: 768px) {
+			header nav ul {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				list-style: none;
+			}
+
+		}
+
+		header nav ul li {
+			padding-left: 12px;
+			padding-right: 12px;
+			
+
+		}
+			header nav ul li a {
+				color: white;
+				text-decoration: none;
+		}
+img {
+	height: 240px;
+	width: 320px;
+}
+
+p {
+	text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+  outline: 1px solid dimgray;
+  text-decoration: underline;
+  background-color: #0cbbf0;
+}
+
+
+
+ .container {
+ 	margin-left: 100px;
+ 	margin-right: 100px;
+ 	text-align: center;
+ 	
+ }
+
+@media (max-width: 768px) {
+	.container {
+		margin-left: 10px;
+	 	margin-right: 10px;
+	 	text-align: center;
+
+	}
+}  
+
+
+
+
+ #videos {
+ 	display: flex;
+ 	margin-left: 1%;
+ 	margin-right: 1%;
+ 	flex-basis: content;
+ }
+
+ .contentWrapper {
+ 	/*padding: 10px;*/
+/* 	flex-basis: 3;*/
+	width: 100%;
+ }
+
+.error {
+	color: red;
+}
+
+figure {
+	margin:10px;
+}
+
+#videos {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 0;
+	column-gap: 0;
+}
+	#videos figcaption {
+		font-size: 0.7em;
+	}
+
+.video {
+/*	width: 160px;
+	height: 120px;*/
+	padding: 5px;
+	flex-basis: auto;
+	
+}
+
+.subhead {
+	color: teal;
+}
+
+form {
+	background: #f5f3ed;
+	box-shadow: 0 0 5px 10px #f5f3ed;
+}
+	form fieldset {
+		border: none;
+	}
+	form ol {
+		list-style: none;
+		padding: 0;
+
+	}
+
+	form input, label, textarea {
+		display: block;
+		margin: 0 auto;
+		color: teal;
+	}
+input:focus, textarea:focus {
+	background-color: beige;
+	color: #ed7c6b;
+
+}
+
+
+footer {
+    margin-top: 7%;
+    text-align: center;
+}
+#footernav {
+    margin: 0;
+    
+}
+    #footernav ul {
+        display: flex;
+        justify-content: center;
+       /*text-align: center;*/
+       list-style: none;
+       margin: 0;
+       padding: 0;
+
+    }
+        #footernav ul li {
+            padding: 0 10px;
+
+        }
+
+        #footernav ul li:last-of-type {
+
+        }
+
+        #footernav ul li a{
+            font-size: 0.7em;
+            text-decoration: none;
+            color: teal;
+        }
+
+        footer p {
+            font-size: 0.7em;
+            margin: 2px;
+        }
+
+
